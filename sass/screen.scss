@@ -1,0 +1,120 @@
+@import "compass/css3";
+@import "compass/typography";
+
+// Uncomment and adjust default configuration here.
+// Base font-size in pixels.
+// $font-size: 16;
+
+// Base line-height.
+// $line: $font-size * 1.5;
+// $em: $font-size * 1;
+
+// Number of columns.
+// $columns: 12;
+
+// Width of the outer margin, in percent.
+// $outer-margin: 5.55555%;
+
+// Half width of the gutter, in em. 
+// $half-gutter-width: #{($line/2)/$em}em;
+
+// Comment out unnecessary modules here.
+@import "takitapart_framework/normalize";
+@import "takitapart_framework/typography";
+@import "takitapart_framework/grid";
+@import "takitapart_framework/form";
+@import "takitapart_framework/print";
+
+// taktiapart color palette. 
+$color-dark-red: #aa3535;
+$color-red: #d13038;
+
+$color-orange: #f58723;
+$color-light-orange: #eebb66;
+
+$color-dark-blue: #224455;
+$color-blue: #44aaaa;
+
+$color-green: #668866;
+$color-light-green: #dddd88;
+
+$color-dark-grey: #473c46;
+$color-grey: #839192;
+$color-light-grey: #ced1cb;
+
+// Type
+@import "type";
+
+
+html {
+    @include box-shadow(
+        rgba(black, 0.1) 0 0 10em 5em inset
+    );
+    height: 100%;
+}
+
+body {
+    @include grid();
+
+    @include background(
+        url(../images/bob-vanderclay-2012-07.jpg) no-repeat top center fixed
+    );
+    @include background-size(cover);
+
+    color: white;
+    font-family: "PlutoSansCond", sans-serif;
+
+	@include text-shadow(rgba(black, 0.25) 0 0 0.25em);
+}
+
+h1 {
+	color: $color-light-orange;
+    font-family: "PlutoSans", sans-serif;
+	@extend .massive;
+	font-weight: 700;
+}
+
+h2 {
+    font-family: "PlutoSans", sans-serif;
+	font-weight: 500;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+h3 {
+}
+
+p {
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	font-weight: normal;
+}
+
+a {
+	color: $color-orange;
+	font-weight: bold;
+	text-decoration: none;
+
+	&:hover {
+
+	}
+}
+
+div.content {
+	background: rgba(black, 0.4);
+
+}
+
+// Responsive Layout
+div#main {
+	@include push(9);
+	@include column(3);
+}
+
+
