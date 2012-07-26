@@ -56,8 +56,9 @@ $color-light-grey: #ced1cb;
 
     @include text-shadow(rgba($text-color, 1) 0 0 $amount);
     
-        a {
-            @if $hard {
+    a {
+
+        @if $hard {
             color: $link-color;
         } @else {
             color: transparent;
@@ -120,7 +121,7 @@ h3 {
 }
 
 p {
-    @include defocussed-text(white, $color-orange, 1px); 
+    @include defocussed-text(white, $color-orange, 0.05em); 
 
     font-weight: normal;
 }
@@ -145,7 +146,8 @@ a {
 
 div.content {
 	background: rgba(black, 0.4);
-
+    @include box-shadow(rgba(black, 0.4) 0 0 1px 2px);
+    @include border-radius(0.5em);
 }
 
 footer, #footer {

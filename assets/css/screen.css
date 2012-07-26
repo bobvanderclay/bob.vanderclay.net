@@ -724,7 +724,7 @@ form fieldset label {
     page-break-after: avoid;
   }
 }
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 body {
   display: block;
   width: 88.889%;
@@ -752,7 +752,7 @@ body:after {
   clear: both;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 div#filter-holder-a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 0 75px 40px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 0 75px 40px inset;
@@ -766,7 +766,7 @@ div#filter-holder-a {
   pointer-events: none;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 h1 {
   text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
   color: transparent;
@@ -780,7 +780,7 @@ h1 a {
   text-shadow: #eebb66 0 0 1px;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 h2 {
   text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
   color: transparent;
@@ -795,52 +795,60 @@ h2 a {
   text-shadow: #eebb66 0 0 1px;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 p {
   text-shadow: rgba(255, 255, 255, 0.95) 0 0 1px;
   color: transparent;
-  text-shadow: white 0 0 1px;
+  text-shadow: white 0 0 0.05em;
   font-weight: normal;
 }
 /* line 59, ../sass/screen.scss */
 p a {
   color: transparent;
-  text-shadow: #f58723 0 0 1px;
+  text-shadow: #f58723 0 0 0.05em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 ul {
   list-style: none;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 li {
   font-weight: normal;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 div.content {
   background: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 1px 2px;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 footer, #footer {
   position: fixed;
   bottom: 0;
   color: rgba(255, 255, 255, 0.75);
   text-shadow: 0;
 }
-/* line 158, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 footer a, #footer a {
   color: rgba(255, 255, 255, 0.75);
   font-weight: bold;
@@ -849,7 +857,7 @@ footer a, #footer a {
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  /* line 169, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   div#main {
     display: block;
     float: left;
@@ -865,7 +873,7 @@ footer a, #footer a {
 /* @media screen and (min-width: 720px) */
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
-  /* line 182, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   div#main {
     margin-left: 75%;
     display: block;
