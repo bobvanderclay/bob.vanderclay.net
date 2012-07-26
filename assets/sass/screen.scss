@@ -104,7 +104,7 @@ div#filter-holder-a {
 h1 {
     @include defocussed-text($color-light-orange); 
 
-    font-family: "brandon grotesque";
+    font-family: "brandon-grotesque";
 	@extend .huge;
 	font-weight: 700;
 }
@@ -112,7 +112,7 @@ h1 {
 h2 {
     @include defocussed-text($color-light-orange); 
 
-    font-family: "brandon grotesque";
+    font-family: "brandon-grotesque";
 	font-weight: 500;
 	text-transform: uppercase;
 }

@@ -771,7 +771,7 @@ h1 {
   text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
   color: transparent;
   text-shadow: #eebb66 0 0 1px;
-  font-family: "brandon grotesque";
+  font-family: "brandon-grotesque";
   font-weight: 700;
 }
 /* line 59, ../sass/screen.scss */
@@ -785,7 +785,7 @@ h2 {
   text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
   color: transparent;
   text-shadow: #eebb66 0 0 1px;
-  font-family: "brandon grotesque";
+  font-family: "brandon-grotesque";
   font-weight: 500;
   text-transform: uppercase;
 }
