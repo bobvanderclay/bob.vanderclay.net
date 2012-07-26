@@ -11,9 +11,15 @@
     <!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://use.typekit.net/neh8gur.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript" src="assets/js/takitapart-noise.js"></script>
+
+    <link href="assets/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <div id="filter-holder-a"></div>
 
 	<div class="content" id="main">
 		<h1>Bob van der Clay</h1>
@@ -25,5 +31,13 @@
 		<p>You'll find me on <a href="http://twitter.com/takitapart">twitter</a>, <a href="http://flickr.com/takitapart">flickr</a>, but mostly on my primary site, <a href="http://takitapart.net">takitapart.net</a>.</p>
 	</div>
 
+    <footer>
+    </footer>
+
 </body>
+
+<script>
+    generateNoise(0.2); // default opacity is .2
+</script>
+
 </html>
