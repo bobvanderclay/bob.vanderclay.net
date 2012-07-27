@@ -724,7 +724,7 @@ form fieldset label {
     page-break-after: avoid;
   }
 }
-/* line 76, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 body {
   display: block;
   width: 88.889%;
@@ -739,7 +739,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-family: "livory";
 }
 /* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/takitapart_framework-0.0.1/stylesheets/takitapart_framework/_grid.scss */
@@ -752,7 +752,7 @@ body:after {
   clear: both;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 div#filter-holder-a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 0 75px 40px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 0 75px 40px inset;
@@ -766,69 +766,53 @@ div#filter-holder-a {
   pointer-events: none;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 h1 {
-  text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
-  color: transparent;
-  text-shadow: #eebb66 0 0 1px;
+  color: rgba(238, 187, 102, 0.25);
+  text-shadow: rgba(238, 187, 102, 0.9) 0 0 1px;
   font-family: "brandon-grotesque";
   font-weight: 700;
 }
-/* line 59, ../sass/screen.scss */
-h1 a {
-  color: transparent;
-  text-shadow: #eebb66 0 0 1px;
-}
 
-/* line 112, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 h2 {
-  text-shadow: rgba(238, 187, 102, 0.95) 0 0 1px;
-  color: transparent;
+  color: rgba(238, 187, 102, 0.25);
   text-shadow: #eebb66 0 0 1px;
   font-family: "brandon-grotesque";
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 59, ../sass/screen.scss */
-h2 a {
-  color: transparent;
-  text-shadow: #eebb66 0 0 1px;
-}
 
-/* line 123, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 p {
-  text-shadow: rgba(255, 255, 255, 0.95) 0 0 1px;
-  color: transparent;
-  text-shadow: white 0 0 0.05em;
+  color: rgba(255, 255, 255, 0.25);
+  text-shadow: rgba(255, 255, 255, 0.9) 0 0 1px;
   font-weight: normal;
 }
-/* line 59, ../sass/screen.scss */
-p a {
-  color: transparent;
-  text-shadow: #f58723 0 0 0.05em;
-}
 
-/* line 129, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 ul {
   list-style: none;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 li {
   font-weight: normal;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 a {
+  color: rgba(245, 135, 35, 0.25);
+  text-shadow: #f58723 0 0 1px;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 142, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 div.content {
   background: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 1px 2px;
@@ -841,14 +825,14 @@ div.content {
   border-radius: 0.5em;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 footer, #footer {
   position: fixed;
   bottom: 0;
   color: rgba(255, 255, 255, 0.75);
   text-shadow: 0;
 }
-/* line 160, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 footer a, #footer a {
   color: rgba(255, 255, 255, 0.75);
   font-weight: bold;
@@ -857,7 +841,7 @@ footer a, #footer a {
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  /* line 171, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   div#main {
     display: block;
     float: left;
@@ -873,7 +857,7 @@ footer a, #footer a {
 /* @media screen and (min-width: 720px) */
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
-  /* line 184, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   div#main {
     margin-left: 75%;
     display: block;

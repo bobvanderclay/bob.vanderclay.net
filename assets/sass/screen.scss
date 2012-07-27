@@ -44,29 +44,9 @@ $color-light-grey: #ced1cb;
 
 // Type
 // @import "takitapart-type-plutosans";
+@import "takitapart-rearprojection";
 
-@mixin defocussed-text($text-color, $link-color: $text-color, $amount: 1px, $hard: false) {
-    @include text-shadow(rgba($text-color, 0.95) 0 0 1px);
 
-    @if $hard {
-        color: $text-color;
-    } @else {
-        color: transparent;
-    }
-
-    @include text-shadow(rgba($text-color, 1) 0 0 $amount);
-    
-    a {
-
-        @if $hard {
-            color: $link-color;
-        } @else {
-            color: transparent;
-        }
-    
-        @include text-shadow(rgba($link-color, 1) 0 0 $amount);
-    }
-}
 
 
 html {
@@ -81,10 +61,10 @@ body {
     );
     @include background-size(cover);
 
-    color: white;
+    color: rgba(white, 0.9);
     font-family: "livory";
 
-	// @include text-shadow(rgba(black, 0.25) 0 0 0.25em);
+	// @include text-shadow(rgba(black, 0.25) 0 0 0.25em 2px);
 }
 
 div#filter-holder-a {
@@ -102,7 +82,7 @@ div#filter-holder-a {
 }
 
 h1 {
-    @include defocussed-text($color-light-orange); 
+    @include defocussed-text(rgba($color-light-orange, 0.9)); 
 
     font-family: "brandon-grotesque";
 	@extend .huge;
@@ -121,7 +101,7 @@ h3 {
 }
 
 p {
-    @include defocussed-text(white, $color-orange, 0.05em); 
+    @include defocussed-text(rgba(white, 0.9)); 
 
     font-weight: normal;
 }
@@ -135,6 +115,7 @@ li {
 }
 
 a {
+    @include defocussed-text($color-orange);
 	// color: $color-orange;
 	font-weight: bold;
 	text-decoration: none;
@@ -145,9 +126,7 @@ a {
 }
 
 div.content {
-	background: rgba(black, 0.4);
-    @include box-shadow(rgba(black, 0.4) 0 0 1px 2px);
-    @include border-radius(0.5em);
+	@include defocussed-box(rgba(black, 0.4));
 }
 
 footer, #footer {
