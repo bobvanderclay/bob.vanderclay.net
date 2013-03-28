@@ -19,11 +19,11 @@
 // $half-gutter-width: #{($line/2)/$em}em;
 
 // Comment out unnecessary modules here.
-@import "takitapart_framework/normalize";
-@import "takitapart_framework/typography";
-@import "takitapart_framework/grid";
-@import "takitapart_framework/form";
-@import "takitapart_framework/print";
+@import "takitapart/normalize";
+@import "takitapart/typography";
+@import "takitapart/grid";
+// @import "takitapart/form";
+// @import "takitapart/print";
 
 // taktiapart color palette. 
 $color-dark-red: #aa3535;
@@ -44,7 +44,7 @@ $color-light-grey: #ced1cb;
 
 // Type
 // @import "takitapart-type-plutosans";
-@import "takitapart-rearprojection";
+@import "takitapart-backlit";
 
 
 
@@ -82,7 +82,7 @@ div#filter-holder-a {
 }
 
 h1 {
-    @include defocussed-text(rgba($color-light-orange, 0.9)); 
+    @include backlit-text($color-light-orange); 
 
     font-family: "brandon-grotesque";
 	@extend .huge;
@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-    @include defocussed-text($color-light-orange); 
+    @include backlit-text($color-light-orange); 
 
     font-family: "brandon-grotesque";
 	font-weight: 500;
@@ -101,8 +101,7 @@ h3 {
 }
 
 p {
-    @include defocussed-text(rgba(white, 0.9)); 
-
+    @include backlit-text(white); 
     font-weight: normal;
 }
 
@@ -115,8 +114,8 @@ li {
 }
 
 a {
-    @include defocussed-text($color-orange);
-	// color: $color-orange;
+    @include backlit-text($color-orange);
+	
 	font-weight: bold;
 	text-decoration: none;
 
@@ -125,35 +124,31 @@ a {
 	}
 }
 
-div.content {
-	@include defocussed-box(rgba(black, 0.4));
-}
-
-footer, #footer {
-    position: fixed;
-    bottom: 0;
-
-    color: rgba(#fff, 0.75);
-    @include text-shadow(0);
-
-    a {
-        color: rgba(#fff, 0.75);
-        font-weight: bold;
-        text-decoration: underline;
-    }
+div#main {
+	@include backlit-box(rgba(black, 0.6));
+    // @include column(12);
+    position: absolute;
+    bottom: 1em;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    padding: 1em;
+    margin: 0;
 }
 
 
 // Responsive Layout
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-	div#main {
-		@include column(12);
-	}
+    div#main {
+        top: auto;
+    }
 }
 
 /* @media screen and (min-width: 640px) */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
+
+}
 
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {}
@@ -161,8 +156,13 @@ footer, #footer {
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
 	div#main {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
 		@include push(9);
 		@include column(3);
+        @include backlit-box(rgba(black, 0.4));
 	}
 }
 

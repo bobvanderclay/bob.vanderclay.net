@@ -1,4 +1,4 @@
-require 'takitapart_framework'
+require 'takitapart'
 # Require any additional compass plugins here.
 
 
